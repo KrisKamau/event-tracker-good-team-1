@@ -13,6 +13,7 @@ let book = require('./controllers/book/index');
 let confirmation = require('./controllers/confirmation/index');
 let homepage = require('./controllers/home/index');
 let login = require('./controllers/login/index');
+let logout = require('./controllers/logout/index');
 let register = require('./controllers/register/index');
 let searchResults = require('./controllers/searchResults/index');
 let eventPage = require('./controllers/eventPage/index');
@@ -54,6 +55,7 @@ app.set('view engine', 'hbs');
 //Controllers / Route setup
 app.use('/', homepage);
 app.use('/login', login);
+app.use('/logout', logout);
 app.use('/events', searchResults);
 app.use('/account', account);
 app.use('/eventPage', eventPage);
